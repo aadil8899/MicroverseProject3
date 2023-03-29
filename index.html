@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      
+      @media (max-width: 768px) {
+        
+        #nav-bar ul {
+          display: flex;
+          flex-direction: column;
+        }
+        
+        #nav-bar li {
+          margin: 0;
+        }
+      }
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        position: fixed;
+        top: 0;
+      }
+      #nav-bar ul {
+        display: flex;
+        list-style: none;
+      }
+      #nav-bar li {
+        margin-right: 1rem;
+      }
+      #nav-bar a {
+        text-decoration: none;
+        color: black;
+      }
+      #nav-bar a:hover {
+        color: gray;
+      }
+    </style>
   </head>
 
   <body>
@@ -22,9 +62,10 @@
           </li>
         </ul>
       </nav>
-
     </header>
+
     <video src="https://youtu.be/y8Yv4pnO7qc" id="video"></video>
+
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <div>
         <section>
@@ -43,9 +84,8 @@
       <input type="email" id="email" placeholder="Enter your email" name="email">
       <input type="submit" id="submit">
     </form>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
 </html>
